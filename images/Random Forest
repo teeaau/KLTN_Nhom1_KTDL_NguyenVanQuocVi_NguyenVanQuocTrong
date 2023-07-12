@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Curricular units 1st sem (approved) &le; 4.5<br/>gini = 0.615<br/>samples = 2257<br/>value = [1787, 1087, 665]<br/>class = Graduate>, fillcolor="#f8dbc6"] ;
+1 [label=<Curricular units 2nd sem (grade) &le; 10.208<br/>gini = 0.535<br/>samples = 821<br/>value = [193, 813, 293]<br/>class = Dropout>, fillcolor="#99f2be"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Curricular units 2nd sem (approved) &le; 3.5<br/>gini = 0.31<br/>samples = 431<br/>value = [55, 542, 63]<br/>class = Dropout>, fillcolor="#60ea9a"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+208 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 208 ;
+211 [label=<Tuition fees up to date &le; 0.5<br/>gini = 0.644<br/>samples = 390<br/>value = [138, 271, 230]<br/>class = Dropout>, fillcolor="#ebfcf2"] ;
+1 -> 211 ;
+212 [label="(...)", fillcolor="#C0C0C0"] ;
+211 -> 212 ;
+225 [label="(...)", fillcolor="#C0C0C0"] ;
+211 -> 225 ;
+558 [label=<Scholarship holder &le; 0.5<br/>gini = 0.451<br/>samples = 1436<br/>value = [1594, 274, 372]<br/>class = Graduate>, fillcolor="#eead7d"] ;
+0 -> 558 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+559 [label=<Curricular units 1st sem (approved) &le; 5.5<br/>gini = 0.526<br/>samples = 962<br/>value = [952, 225, 316]<br/>class = Graduate>, fillcolor="#f1bb94"] ;
+558 -> 559 ;
+560 [label="(...)", fillcolor="#C0C0C0"] ;
+559 -> 560 ;
+805 [label="(...)", fillcolor="#C0C0C0"] ;
+559 -> 805 ;
+1228 [label=<Application mode &le; 13.5<br/>gini = 0.251<br/>samples = 474<br/>value = [642, 49, 56]<br/>class = Graduate>, fillcolor="#e99457"] ;
+558 -> 1228 ;
+1229 [label="(...)", fillcolor="#C0C0C0"] ;
+1228 -> 1229 ;
+1432 [label="(...)", fillcolor="#C0C0C0"] ;
+1228 -> 1432 ;
+}
